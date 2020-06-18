@@ -84,7 +84,7 @@ sudo ufw allow 22/tcp
 # SSH-Tunnel
 Für mein SSH-Tunell verwende ich Putty, so funktionierts
 
-![](https://github.com/clproduction/Modul300/blob/master/images/SSH_Tunnel.PNG)
+![](https://github.com/clproduction/Modul300/blob/master/images/SSH_Tunnel.PNG) \
 Ich habe für Port 443, 80, 22 eine Weiterleitung erstellt damit die verbindung zwei Teile hat.
 
 ![](https://github.com/clproduction/Modul300/blob/master/images/SSH_Tunnel_1.PNG)
