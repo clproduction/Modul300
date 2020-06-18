@@ -117,7 +117,7 @@ Bringing machine 'default' up with 'virtualbox' provider...
 Funktioniert.
 
 ### Lauft der Webserver und kann ich ihn über HTTPS erreichen?
-![](https://github.com/clproduction/Modul300/blob/master/images/SSL.PNG) \
+![](https://github.com/clproduction/Modul300/blob/master/images/SSL.PNG) 
 
 Webserver ist erreichbar über die von mir gesetzte IP Adresse und das HTTPS funktioniert auch!
 
