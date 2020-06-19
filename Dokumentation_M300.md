@@ -127,6 +127,13 @@ Webserver ist erreichbar über die von mir gesetzte IP Adresse und das HTTPS fun
 Funktioniert auch, Perfekt.\
 *Achtung aufpassen das man das erstellte Putty Profil verwendet!*
 
+# Reflektion
+### Vergleich Vorwissen - Wissenszuwachs
+Ich habe vor diesem Modul noch nie etwas mit Vagrant zu tun gehabt. Ich glaube das ich jetzt die Basics von Vagrant verstehe. Jetzt ist mir auch bewusst warum Marcel Calisto immer davon spricht das, dass die Zukunft ist bli bla blub. Ich habe noch nie in meinem Leben so schnell einen funktionierenden Webserver aufgesetzt. Ich war Überrascht, wirklich.
+
+
+### Reflektion
+Anfangs war ich ein bisschen überwältigt mit dem ganzen Gitbash und Github repository Zeugs, doch nach eins, zwei Stunden habe ich mich in dem ganzen Zeug gefunden. Es war eigentlich ziemlich einfach. Es gibt viele Anleitungen und How to's die zeigen wie was funktioniert. Ich bin froh das wir Markdown brauchen mussten, ich habe bis zu diesem Modul nicht bemerkt wo es überall verwendet wird und es wird vermehrt auf Foren und halt Github verwendet. Als Informatiker ist das sicher ein wichtiger Skill.
 
 
 
