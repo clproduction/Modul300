@@ -103,11 +103,6 @@ Befehl für den Install des Agents
 ```Ruby
 sudo bash -c "$(curl -sSL https://files.solarwinds.cloud/solarwinds-snap-agent-installer.sh)" -s --token 7c0852619bd4280e920d81b9f54d385d4b982930fafa1bd750f41a90908fea42
 ```
-## Docker Container absichern
-#
-*Image erstellen uns speicher von Container (docker push)
-*Volume erstellen (Anderer Speicherort - eventuell klonen)
-*Image auf ein anderes Medium transferieren
 
 ### Mit dem Command 
 ```Ruby
