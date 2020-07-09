@@ -87,10 +87,6 @@ docker volume ls
     +---------------------------------------------------------------+
 
 
-## Security - Sicherheitsmassnahmen
-#
-1. Ein Backup des Container ermöglicht ein schnelles und effizentes recovern einer kaputten VM.
-2. 
 ## Aktive Benachrichtigungen Docker - Services überwachen
 #
 ### Mit Solarwinds Container überwachen
