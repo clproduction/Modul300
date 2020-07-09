@@ -3,6 +3,8 @@ Modul 300 Dokumentation / LB3
 #
 ## Docker auf VMWARE betreiben
 ### Damit es funktioniert muss man eine Einstllung im Hypervisor tätigen.&nbsp;
+Wenn diese Einstellung nicht aktiviert ist wird es beim Installieren eine Fehlermeldung geben.
+![]https://github.com/clproduction/Modul300/blob/master/img_LB3/Virtualize.PNG \
 
 *Grafische Darstellung*
 
@@ -23,7 +25,7 @@ Modul 300 Dokumentation / LB3
     +---------------------------------------------------------------+
     ! Hypervisor: HyperV                                            !	
     +---------------------------------------------------------------+
-    ! Host OS: Windows	v2004                                       !
+    ! Host OS: Windows	v2004 (On VMWARE)                           !
     +---------------------------------------------------------------+
 
 
@@ -89,18 +91,25 @@ docker volume ls
 ## Aktive Benachrichtigungen Docker - Services überwachen
 #
 ### Mit Solarwinds Container überwachen
-#### Solarwinds installieren
+#### 3rd party Monitoring Software Solarwinds 
 Sobald man Solarwinds auf dem Host OS installiert hat kann man im Browser auf das Interface zugreifen.
 ```Ruby
 https://my.appoptics.com
 ```
+#### So sieht das Interface dann aus.
+![]https://github.com/clproduction/Modul300/blob/master/img_LB3/SolarwindsDockerMonitoringHowItCouldLookLike.png \
 #### Danach muss man noch das Docker Plugin hinzufügen und den Agent in dem Container Installieren.
+![]https://github.com/clproduction/Modul300/blob/master/img_LB3/DockerPlugin.PNG \
 Befehl für den Install des Agents
 ```Ruby
 sudo bash -c "$(curl -sSL https://files.solarwinds.cloud/solarwinds-snap-agent-installer.sh)" -s --token 7c0852619bd4280e920d81b9f54d385d4b982930fafa1bd750f41a90908fea42
 ```
 ## Docker Container absichern
 #
+*Image speicher
+*Volume erstellen (Anderer Speicherort)
+*
+
 ### Mit dem Command 
 ```Ruby
 Docker Commit -p <Container-Name> example/example
@@ -121,11 +130,6 @@ Docker images
 2. Ist mein erstelltes Volume wirklich meinem Container zugewiesen?
 3. Kann ich auf die PHPMYADMIN seite zugreifen? (http://localhost/)
 
-
-#### Kann ich mein FTP Server Starten?
-```Ruby
-docker run -d --name ftpd_server -p 21:21 -p 30000-30009:30000-30009 -e "PUBLICHOST=localhost" stilliard/pure-ftpd 
-```
 ## Quellenangaben
 #
 **Quelle 1**
