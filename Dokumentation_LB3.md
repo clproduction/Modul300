@@ -47,11 +47,19 @@ docker run --name my-own-mysql -e MYSQL_ROOT_PASSWORD=mypass123 -d mysql:8.0.1
 The option -d means that docker will run the container in the background in “detached” mode. If -d is not used the container run in the default foreground mode.
 ## Volumes Datenablage
 #
-
-
-
-
-## Docker Befehle
+#### So erstellt man ein neues Volume
+```Ruby
+docker volume create --name [volume name]
+```
+#### Container mit gewissem Volume starten
+```Ruby
+-v [volume name]:[container directory]
+```
+#### Alle bestehenden Volumes anzeigen
+```Ruby
+sudo docker volume ls
+```
+## Wichtige Docker Befehle
 #
 #### Start a container in background    
 ```Ruby
@@ -73,11 +81,6 @@ docker inspect -f '{{ .NetworkSettings.IPAddress }}' (Container-Name)
 ```Ruby
 docker volume ls
 ```
-
-
-
-
-
 ## Netzwerk Umgebung
 #
 ## Security
@@ -112,13 +115,12 @@ Docker images
 * example/example ist der Name des IMAGES
 ## Testfälle
 #
-## Testprotokoll
-Ich habe alle folgenden Tests auf meinem System durchgeführt. Diese können auch als Kontrolle verwendet werden, ob der Container wie gewollt funktioniert. 
-|Nr.|   Test        |Erwartetes Resultat            |Effektives Resultat          |Entscheid|
-|---|---------------|-------------------------------|-----------------------------|-----------------|
-|1  |Zugriff auf Webseite von Host OS Windows mit Browser URL: localhost:8080 |Anzeigen des index.html Files|Fehlermeldung Seite kann nicht gefunden werden| Nicht erfüllt, da die Website ja nicht auf dem Host OS Windows läuft kann auch nicht per localhost darauf zugegrifen werden.                       
-|2  |Von Docker aus mithilfe von Curl auf die Webseite zugreifen.|Der Inhalt des index.html Files wird angezeigt|Das index.html File wird dargestellt |Erfüllt
-|3  |Zugriff auf Webseite von Windows Host im Browser URL: ipadresse-container:8080|Der Inhalt des index.html Files wird angezeigt|Das index.html File wird dargestellt |Erfüllt
+
+1. Kann ich den Docker Container im hintergrund starten?
+   
+2. Ist mein erstelltes Volume wirklich meinem Container zugewiesen?
+3. Kann ich auf die PHPMYADMIN seite zugreifen? (http://localhost/)
+
 
 #### Kann ich mein FTP Server Starten?
 ```Ruby
