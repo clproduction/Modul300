@@ -104,12 +104,12 @@ Befehl für den Install des Agents
 sudo bash -c "$(curl -sSL https://files.solarwinds.cloud/solarwinds-snap-agent-installer.sh)" -s --token 7c0852619bd4280e920d81b9f54d385d4b982930fafa1bd750f41a90908fea42
 ```
 
-### Mit dem Command 
+### Container Image speichern
 ```Ruby
 Docker Commit -p <Container-Name> example/example
 ```
-Ein Commit macht ein image des Container in dem Aktuellen stand. Es wird später auf dem Host OS gespeichert. Hier sieht man wo es agespeichert wurde.
-
+Ein Commit macht ein image des Container in dem Aktuellen stand. Es wird später auf dem Host OS gespeichert. Hier sieht man wo es abgespeichert wurde.
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/IMAGElocation.PNG)
 *Wie man sieht was für images man hat kann man diesen Command verwenden.*
 ```Ruby
 Docker images
