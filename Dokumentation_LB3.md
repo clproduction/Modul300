@@ -5,7 +5,7 @@ Modul 300 Dokumentation / LB3
 ### Damit es funktioniert muss man eine Einstllung im Hypervisor tätigen.&nbsp;
 Wenn diese Einstellung nicht aktiviert ist wird es beim Installieren eine Fehlermeldung geben.
 
-![]https://github.com/clproduction/Modul300/blob/master/img_LB3/Virtualize.PNG \
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/Virtualize.PNG) \
 
 *Grafische Darstellung*
 
@@ -98,9 +98,9 @@ Sobald man Solarwinds auf dem Host OS installiert hat kann man im Browser auf da
 https://my.appoptics.com
 ```
 #### So sieht das Interface dann aus.
-![]https://github.com/clproduction/Modul300/blob/master/img_LB3/SolarwindsDockerMonitoringHowItCouldLookLike.png \
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/SolarwindsDockerMonitoringHowItCouldLookLike.png) \
 #### Danach muss man noch das Docker Plugin hinzufügen und den Agent in dem Container Installieren.
-![]https://github.com/clproduction/Modul300/blob/master/img_LB3/DockerPlugin.PNG \
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/DockerPlugin.PNG) \
 Befehl für den Install des Agents
 ```Ruby
 sudo bash -c "$(curl -sSL https://files.solarwinds.cloud/solarwinds-snap-agent-installer.sh)" -s --token 7c0852619bd4280e920d81b9f54d385d4b982930fafa1bd750f41a90908fea42
