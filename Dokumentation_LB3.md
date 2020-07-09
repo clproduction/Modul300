@@ -127,10 +127,14 @@ Docker images
 #
 
 1. Kann ich den Docker Container im hintergrund starten?
-   
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/background.PNG)
+Meine Container laufen alle im background, funktioniert!
 2. Ist mein erstelltes Volume wirklich meinem Container zugewiesen?
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/Volume.PNG) \
+Wie man sieht ist dasa Volume für diesen Webserver "testvolume", dass wurde von mir erstellt und bei starten des Container habe ich es angegeben.
 3. Kann ich auf die PHPMYADMIN seite zugreifen? (http://localhost/)
-
+![](https://github.com/clproduction/Modul300/blob/master/img_LB3/PHPMyAdmin.PNG) \
+Funktioniert!
 ## Quellenangaben
 #
 **Quelle 1**
