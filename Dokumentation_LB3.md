@@ -1,7 +1,7 @@
 # Modul300
 Modul 300 Dokumentation / LB3
 #
-## Docker auf VMWARE betreiben
+## Docker auf VMWARE als Host OS 
 ### Damit es funktioniert muss man eine Einstllung im Hypervisor tätigen ESSENZIELL!.&nbsp;
 Wenn diese Einstellung nicht aktiviert ist wird es beim Installieren eine Fehlermeldung geben.
 
