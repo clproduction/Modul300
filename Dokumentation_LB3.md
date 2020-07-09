@@ -126,15 +126,15 @@ Docker images
 ## Testfälle
 #
 
-1. Kann ich den Docker Container im hintergrund starten?
+### Kann ich den Docker Container im hintergrund starten?
 ![](https://github.com/clproduction/Modul300/blob/master/img_LB3/background.PNG)
-Meine Container laufen alle im background, funktioniert!
-2. Ist mein erstelltes Volume wirklich meinem Container zugewiesen?
+*Meine Container laufen alle im background, funktioniert!*
+### Ist mein erstelltes Volume wirklich meinem Container zugewiesen?
 ![](https://github.com/clproduction/Modul300/blob/master/img_LB3/Volume.PNG) \
-Wie man sieht ist dasa Volume für diesen Webserver "testvolume", dass wurde von mir erstellt und bei starten des Container habe ich es angegeben.
-3. Kann ich auf die PHPMYADMIN seite zugreifen? (http://localhost/)
+*Wie man sieht ist dasa Volume für diesen Webserver "testvolume", dass wurde von mir erstellt und bei starten des Container habe ich es angegeben.*
+### Kann ich auf die PHPMYADMIN seite zugreifen? (http://localhost/)
 ![](https://github.com/clproduction/Modul300/blob/master/img_LB3/PHPMyAdmin.PNG) \
-Funktioniert!
+*Funktioniert!*
 ## Quellenangaben
 #
 **Quelle 1**
@@ -146,4 +146,6 @@ Provider des images & Anleitung (mysql)
 https://medium.com
 ## Vergleich Vorwissen - Wissenszuwachs
 #
+Vor der LB3 hatte ich keine ahung von Docker, ich hab noch nie davon gehört. Jetzt würde ich behaupten das ich die Basics behersche und einigermassen damit umgehen kann.
 ## Reflektion
+Der Unterschied von Vagrant zu Docker ist gross. Docker ist einiges schwieriger zu verstehen, jedoch würde ich behaupten das es von Docker mehr Dokumentationen gibt etc. Ich bin am Anfang gar nicht klar gekommen, ich hatte eine gute Stunde bis ich es endlich installiert hatte, kein guter Start. Die ersten paar Schritte waren hart, ich musste mich viel ein lesen und Dokumentationen überfliegen. Nach einer Zeit macht aber alles immer mehr sinn und sobald man es kann macht es sogar noch spass, wenn der Container ohne Probleme läuft. Ich wünschte mir das wir mehr Module in diese Richtung hätten. Ich bin mir zu 100% sicher das, dass was ich in diesem Modul gelernt habe sehr wertvoll ist und ich es irgendwann dann wieder brauchen kann.
