@@ -2,33 +2,10 @@
 Modul 300 Dokumentation / LB3
 #
 ## Docker auf VMWARE betreiben
-### Damit es funktioniert muss man eine Einstllung im Hypervisor tätigen.&nbsp;
+### Damit es funktioniert muss man eine Einstllung im Hypervisor tätigen ESSENZIELL!.&nbsp;
 Wenn diese Einstellung nicht aktiviert ist wird es beim Installieren eine Fehlermeldung geben.
 
 ![](https://github.com/clproduction/Modul300/blob/master/img_LB3/Virtualize.PNG) \
-
-*Grafische Darstellung*
-
-
-    +---------------------------------------------------------------+
-    !                                                               !	
-    !                                                               !
-    !    ! mysql, phpmyadmin                !                       !  
-    !    ! Port: 3306, 8081                 !                       !         
-    !    ! Volume: /var/lib/docker/volumes  !                       !                                                               
-    !                                                               !
-    !                                                               !	
-    ! Container                                                     !	
-    +---------------------------------------------------------------+
-    ! Container-Engine: Docker                                      !	
-    +---------------------------------------------------------------+
-    ! Guest OS: Debian                                              !	
-    +---------------------------------------------------------------+
-    ! Hypervisor: HyperV                                            !	
-    +---------------------------------------------------------------+
-    ! Host OS: Windows	v2004 (On VMWARE)                           !
-    +---------------------------------------------------------------+
-
 
 ## Docker-Container kombinieren
 #
@@ -86,9 +63,34 @@ docker volume ls
 ```
 ## Netzwerk Umgebung
 #
-## Security
-#
 
+*Grafische Darstellung von der Infrastruktur*
+
+
+    +---------------------------------------------------------------+
+    !                                                               !	
+    !                                                               !
+    !    ! mysql, phpmyadmin                !                       !  
+    !    ! Port: 3306, 8081                 !                       !         
+    !    ! Volume: /var/lib/docker/volumes  !                       !                                                               
+    !                                                               !
+    !                                                               !	
+    ! Container                                                     !	
+    +---------------------------------------------------------------+
+    ! Container-Engine: Docker                                      !	
+    +---------------------------------------------------------------+
+    ! Guest OS: Debian                                              !	
+    +---------------------------------------------------------------+
+    ! Hypervisor: HyperV                                            !	
+    +---------------------------------------------------------------+
+    ! Host OS: Windows	v2004 (On VMWARE)                           !
+    +---------------------------------------------------------------+
+
+
+## Security - Sicherheitsmassnahmen
+#
+1. Ein Backup des Container ermöglicht ein schnelles und effizentes recovern einer kaputten VM.
+2. 
 ## Aktive Benachrichtigungen Docker - Services überwachen
 #
 ### Mit Solarwinds Container überwachen
@@ -107,9 +109,9 @@ sudo bash -c "$(curl -sSL https://files.solarwinds.cloud/solarwinds-snap-agent-i
 ```
 ## Docker Container absichern
 #
-*Image speicher
-*Volume erstellen (Anderer Speicherort)
-*
+*Image erstellen uns speicher von Container (docker push)
+*Volume erstellen (Anderer Speicherort - eventuell klonen)
+*Image auf ein anderes Medium transferieren
 
 ### Mit dem Command 
 ```Ruby
